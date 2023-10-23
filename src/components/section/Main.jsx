@@ -1,5 +1,5 @@
 import React from 'react'
-import Serach from './Serach'
+import Serach from './Search'
 
 const Main = ( props ) => {
     return (

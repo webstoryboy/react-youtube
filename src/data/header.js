@@ -25,46 +25,49 @@ export const menuText = [
 export const keywordText = [
     {
         title: "빠니보틀",
-        src: "/serach/빠니보틀"
+        src: "/search/빠니보틀"
+    },{
+        title: "webstoryboy",
+        src: "/search/webstoryboy"
     },{
         title: "곽튜브",
-        src: "/serach/곽튜브"
+        src: "/search/곽튜브"
     },{
         title: "Joe튜브",
-        src: "/serach/Joe튜브"
+        src: "/search/Joe튜브"
     },{
         title: "국제커플",
-        src: "/serach/국제커플"
+        src: "/search/국제커플"
     },{
         title: "캐럿맨 여행기",
-        src: "/serach/캐럿맨 여행기"
+        src: "/search/캐럿맨 여행기"
     },{
         title: "희철리즘",
-        src: "/serach/희철리즘"
+        src: "/search/희철리즘"
     },{
         title: "여행가 제이",
-        src: "/serach/여행가 제이"
+        src: "/search/여행가 제이"
     },{
         title: "테디여행기",
-        src: "/serach/테디여행기"
+        src: "/search/테디여행기"
     },{
         title: "채코제",
-        src: "/serach/채코제"
+        src: "/search/채코제"
     },{
         title: "노마드션",
-        src: "/serach/노마드션"
+        src: "/search/노마드션"
     },{
         title: "둥지언니",
-        src: "/serach/둥지언니"
+        src: "/search/둥지언니"
     },{
         title: "모칠레로",
-        src: "/serach/모칠레로"
+        src: "/search/모칠레로"
     },{
         title: "제이치핏",
-        src: "/serach/제이치핏"
+        src: "/search/제이치핏"
     },{
         title: "브루스리 TV",
-        src: "/serach/브루스리 TV"
+        src: "/search/브루스리 TV"
     }
 ]
 

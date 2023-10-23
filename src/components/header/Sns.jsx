@@ -8,7 +8,7 @@ const Sns = () => {
             
             <ul>
                 {snsText.map((sns, key) => (
-                    <li>
+                    <li key={key}>
                         <a 
                             href={sns.src} 
                             target='_blank' 
