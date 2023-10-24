@@ -24,6 +24,9 @@ export const menuText = [
 
 export const keywordText = [
     {
+        title: "여행",
+        src: "/search/여행"
+    },{
         title: "빠니보틀",
         src: "/search/빠니보틀"
     },{
