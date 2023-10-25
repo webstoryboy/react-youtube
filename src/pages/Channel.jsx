@@ -5,16 +5,22 @@ import { fetchFromAPI } from '../utils/api';
 import { CiBadgeDollar } from "react-icons/ci";
 import { CiMedal } from "react-icons/ci";
 import { CiRead } from "react-icons/ci";
+import VideoSearch from '../components/video/VideoSearch';
 
 const Channel = () => {
     const { channelId } = useParams();
     const [ channelDetail, setChannelDetail ] = useState();
+    const [ channelVideo, setChannelVideo ] = useState([]);
 
     useEffect(() => {
         const fetchResults = async () => {
             try {
                 const data = await fetchFromAPI(`channels?part=snippet&id=${channelId}`);
                 setChannelDetail(data.items[0]);
+
+                const videosData = await fetchFromAPI(`search?channelId=${channelId}&part=snippet&order=date`);
+                console.log(videosData);
+                setChannelVideo(videosData.items);
 
             } catch(error){
                 console.log("Error fetching data" , error);
@@ -41,7 +47,9 @@ const Channel = () => {
                             <span><CiRead />{channelDetail.statistics.viewCount}</span>
                         </div>
                     </div>
-                    <div className='channel__video video__inner'></div>
+                    <div className='channel__video video__inner'>
+                        <VideoSearch videos={channelVideo} />
+                    </div>
                     <div className='channel__more'></div>
                 </div>
             )}
